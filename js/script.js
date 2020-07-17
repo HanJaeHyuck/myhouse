@@ -1,6 +1,6 @@
-let slide = document.querySelector('.slide-panel');
-let prev_btn = document.querySelector('.btn-left');
-let next_btn = document.querySelector('.btn-right');
+let slide = document.querySelector('.slide-pannel');
+let prev_btn = document.querySelector('.left-btn');
+let next_btn = document.querySelector('.right-btn');
 
 let slide_arr = ['000%', '-100%', '-200%', '-100%'];
 let current = 0;
@@ -18,3 +18,19 @@ next_btn.addEventListener('click', (e) => {
     slide.style.left = slide_arr[Math.abs(current % 4)];
     console.log(current);
 });
+
+
+$(".house-img").hover(function() {
+    $(this).children(".after").stop().animate({ 'left' : '0' });
+}, function() {
+    $(this).children(".after").stop().animate({ 'left' : '400px' });
+});
+
+$(".hamburger").on("click", function() {
+    this.classList.toggle("change");
+    document.querySelector(".mobile-header").classList.toggle("click");
+});
+
+
+
+

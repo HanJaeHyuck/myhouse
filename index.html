@@ -5,158 +5,296 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>내집꾸미기</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="fontawesome/css/font-awesome.css">
 
 </head>
 
 <body>
+
+    <!-- Header Start-->
+    <header>
+        <div class="container">
+            <div class="left">
+                <div class="logo">
+                    <a href="#"><img src="images/logo.png" alt="logo"></div></a>
+                <nav>
+                    <a href="#">홈</a>
+                    <a href="#">온라인 집들이</a>
+                    <a href="#">스토어</a>
+                    <a href="#">전문가</a>
+                    <a href="#">시공 견적</a>
+                </nav>
+            </div>
+            <div class="user">
+                <a href="#" class="login">로그인</a>
+                <a href="#" class="join">회원가입</a>
+            </div>
+        </div>
+        <div class="hamburger">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <div class="mobile-header">
+        <ul>
+            <li>
+                <a href="#">홈</a>
+            </li>
+            <li>
+                <a href="#">온라인 집들이</a>
+            </li>
+            <li>
+                <a href="#">스토어</a>
+            </li>
+            <li>
+                <a href="#">전문가</a>
+            </li>
+            <li>
+                <a href="#">시공 견적</a>
+            </li>
+        </ul>
+        <div class="button">
+            <a href="#">로그인</a>
+            <a href="#">회원가입</a>
+        </div>
+    </div>
+    <!-- Header End -->
+
+    <!-- Visual Start -->
+    <section id="visual">
+        <div class="slide">
+            <div class="slide-pannel">
+                <div class="img">
+                    <img src="images/slide1.jpg" alt="slide1">
+                </div>
+                <div class="img">
+                    <img src="images/slide2.jpg" alt="slide2">
+                </div>
+                <div class="img">
+                    <img src="images/slide3.jpg" alt="slide3">
+                </div>
+            </div>
+        </div>
+        <div class="v-btn-group">
+            <div class="v-btn left-btn"><i class="fa fa-angle-left"></i></div>
+            <div class="v-btn right-btn"><i class="fa fa-angle-right"></i></div>
+        </div>
+    </section>
+
+    <!-- Visual End -->
+
+    <!-- Online housewarming Start-->
     <div class="container">
-        <!-- Header Start-->
-        <header>
-            <div class="logo">
-                <img src="images/logo.png" alt="logo">
-            </div>
-            <nav>
-                <ul>
-                    <li>홈</li>
-                    <li>온라인 집들이</li>
-                    <li>스토어</li>
-                    <li>전문가</li>
-                    <li>시공견적</li>
-                </ul>
-            </nav>
-            <div class="info">
-                <div>로그인</div>
-                <div>회원가입</div>
-            </div>
-        </header>
-        <!-- Header End-->
-
-        <!-- slide start-->
-        <section id="slide">
-            <div class="slider">
-                <div class="img-slide">
-                    <div class="slide-panel">
-                        <div class="img"></div>
-                        <div class="img"></div>
-                        <div class="img"></div>
-
-                    </div>
-                </div>
-                <div class="slide-btn">
-                    <div class="btn-left">
-                        <i class="fa fa-chevron-left"></i>
-                    </div>
-                    <div class="btn-right">
-                        <i class="fa fa-chevron-right"></i>
-                    </div>
-                </div>
-            </div>
-            <div class="slide-info">
-                <div class="slide-info-top">
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                    <p>Veniam ea dolores exercitationem corrupti Distinctio,</p>
-                    <p>Voluptatibus, temporibus! Velit, atque!</p>
-                </div>
-                <div class="slide-info-bottom">
-                    <div class="hr-sect">CATEGORY</div>
-                    <h3>Content</h3>
-                    <div class="content">
-                        <div class="number">
-                            <p>I.</p>
-                            <p>II.</p>
-                            <p>III.</p>
-                            <p>IV.</p>
-                        </div>
-                        <div>
-                            <p>Write here a content title</p>
-                            <p>Write here a content title</p>
-                            <p>Write here a content title</p>
-                            <p>Write here a content title</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </section>
-        <!-- slide End-->
-
-        <!-- Online housewarming Start-->
-
         <section id="house">
             <h1>Online Housewarming</h1>
             <div class="house-panel">
                 <div class="house-box">
                     <div class="house-img">
                         <img src="images/1_before.jpg" alt="1_before">
-                        <img src="images/1_after.jpg" alt="1_after">
+                        <img src="images/1_after.jpg" alt="1_after" class="after">
                     </div>
                     <div class="house-info">
-                        user1
-                        <br>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star star-default"></i>
+                        <div>
+                            user1<span>님의 인테리어</span>
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star star-default"></i>
+                        </div>
+
                     </div>
                 </div>
                 <div class="house-box">
                     <div class="house-img">
                         <img src="images/2_before.jpg" alt="2_before">
-                        <img src="images/2_after.jpg" alt="2_after">
+                        <img src="images/2_after.jpg" alt="2_after" class="after">
                     </div>
 
                     <div class="house-info">
-                        user2
-                        <br>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star star-default"></i>
-                        <i class="fa fa-star star-default"></i>
+                        <div>
+                            user2<span>님의 인테리어</span>
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star star-default"></i>
+                            <i class="fa fa-star star-default"></i>
+                        </div>
+
                     </div>
                 </div>
                 <div class="house-box">
                     <div class="house-img">
                         <img src="images/3_before.jpg" alt="3_before">
-                        <img src="images/3_after.jpg" alt="3_after">
+                        <img src="images/3_after.jpg" alt="3_after" class="after">
                     </div>
 
                     <div class="house-info">
-                        user3
-                        <br>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
+                        <div>
+                            user3<span>님의 인테리어</span>
+                        </div>
+
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                        </div>
+
                     </div>
                 </div>
                 <div class="house-box">
                     <div class="house-img">
                         <img src="images/4_before.jpg" alt="4_before">
-                        <img src="images/4_after.jpg" alt="4_after">
+                        <img src="images/4_after.jpg" alt="4_after" class="after">
                     </div>
 
                     <div class="house-info">
-                        user4
-                        <br>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star"></i>
-                        <i class="fa fa-star star-default"></i>
-                        <i class="fa fa-star star-default"></i>
-                        <i class="fa fa-star star-default"></i>
+                        <div>
+                            user3<span>님의 인테리어</span>
+                        </div>
+                        <div class="star">
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star star-default"></i>
+                            <i class="fa fa-star star-default"></i>
+                            <i class="fa fa-star star-default"></i>
+                        </div>
+
                     </div>
                 </div>
             </div>
-
-
         </section>
         <!-- Online housewarming End-->
     </div>
+    <section id="section2">
+        <h1>Experts introduction</h1>
+        <div class="container">
+            <div class="item">
+                <div class="card-top">
+                    <div class="front">
+                        <img src="images/specialist1.jpg" alt="specialist1">
+                    </div>
+                    <div class="back">
+                        <img src="images/specialist1.jpg" alt="specialist1">
+                        <div class="back-text">
+                            <div class="title">&nbsp; 전문가1<br>(specialist1)</div>
+                            <br>
+                            <div class="more-btn">더보기</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-top">
+                    <div class="front">
+                        <img src="images/specialist2.jpg" alt="specialist2">
+                    </div>
+                    <div class="back">
+                        <img src="images/specialist2.jpg" alt="specialist2">
+                        <div class="back-text">
+                            <div class="title">&nbsp; 전문가2<br>(specialist2)</div>
+                            <br>
+                            <div class="more-btn">더보기</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-top">
+                    <div class="front">
+                        <img src="images/specialist3.jpg" alt="specialist3">
+                    </div>
+                    <div class="back">
+                        <img src="images/specialist3.jpg" alt="specialist3">
+                        <div class="back-text">
+                            <div class="title">&nbsp; 전문가3<br>(specialist3)</div>
+                            <br>
+                            <div class="more-btn">더보기</div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+            <div class="item">
+                <div class="card-top">
+                    <div class="front">
+                        <img src="images/specialist4.jpg" alt="specialist4">
+                    </div>
+                    <div class="back">
+                        <img src="images/specialist4.jpg" alt="specialist4">
+                        <div class="back-text">
+                            <div class="title">&nbsp; 전문가4<br>(specialist4)</div>
+                            <br>
+                            <div class="more-btn">더보기</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="section3">
+        <h1>Experts Reviews</h1>
+        <div class="container">
+            <div class="review-box">
+                <div class="review">
+                    <div class="img">
+                        <img src="images/specialist2.jpg" alt="specialist2">
+                    </div>
+                    <div class="text">
+                        <div class="title">전문가2<span> (specialist2)</span></div><br>
+                        <p><span class="bold">작성자</span> 박재현<span class="little"> (park)</span></p>
+                        <p><span class="bold">가격</span> 3,200,000<span class="little"> 원</span></p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star star-default"></i>
+                        </p>
+                        <p class="add-text">원하던 아이언맨 컨셉으로 너무 잘 꾸며주셨습니다!</p>
+                    </div>
+                </div>
+                <div class="more-btn">더보기</div>
+            </div>
+            <div class="review-box">
+                <div class="review">
+                    <div class="img">
+                        <img src="images/specialist4.jpg" alt="specialist4">
+                    </div>
+                    <div class="text">
+                        <div class="title">전문가4<span> (specialist4)</span></div><br>
+                        <p><span class="bold">작성자</span> 김정수<span class="little"> (kim)</span></p>
+                        <p><span class="bold">가격</span> 5,500,000<span class="little"> 원</span></p>
+                        <p>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star"></i>
+                            <i class="fa fa-star star-default"></i>
+                        </p>
+                        <p class="add-text">요구사항대로 부드러운 느낌을 잘 살려주셨습니다.</p>
+                    </div>
+                </div>
+                <div class="more-btn">더보기</div>
+            </div>
+        </div>
+    </section>
+
+    <footer>Copyright (C) 2020 by MyHome Inc All Rights Reserved.</footer>
+
     <script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/script.js"></script>
 </body>
