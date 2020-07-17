@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .slide {
+            width: 500px;
+            height: 350px;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .slide-pannel {
+            width: 300%;
+            height: 100%;
+            position: absolute;
+            display: flex;
+            justify-content: space-between;
+            transition: .6s;
+            left: 000%;
+        }
+
+        .slide-pannel .img {
+            width: calc(100% / 3);
+            height: 100%;
+        }
+
+        .slide-pannel .img:nth-child(1) { background-image: url(images/slide1.jpg); }
+        .slide-pannel .img:nth-child(2) { background-image: url(images/slide2.jpg); }
+        .slide-pannel .img:nth-child(3) { background-image: url(images/slide3.jpg); }
+
+
+        button {
+            width: 50px;
+            height: 350px;
+            border: 1px solid #dfdfdf;
+            background: none;
+            outline: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            border: 1px solid #333;
+            background-color: #333;
+            color: #f3f3f3;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <button class="prev">이전</button>
+        <div class="slide">
+            <div class="slide-pannel">
+                <div class="img"></div>
+                <div class="img"></div>
+                <div class="img"></div>
+            </div>
+        </div>
+        <button class="next">다음</button>
+    </div>
+
+    <script>
+        let slide = document.querySelector('.slide-pannel');
+        let prev_btn = document.querySelector('button.prev');
+        let next_btn = document.querySelector('button.next');
+
+        let slide_arr = ['000%', '-100%', '-200%', '-100%'];
+        let current = 0;
+
+        prev_btn.addEventListener('click', (e) => {
+            current++;
+            slide.style.left = slide_arr[Math.abs(current % 4)];
+            console.log(current);
+        });
+
+        next_btn.addEventListener('click', (e) => {
+            current--;
+            slide.style.left = slide_arr[Math.abs(current % 4)];
+            console.log(current);
+        });
+    </script>
+</body>
+</html>

@@ -19,6 +19,7 @@ header {
     justify-content: space-between;
     position: relative;
     background-color: #fff;
+    font-size: 15px;
 }
 
 header > nav {
@@ -77,6 +78,27 @@ nav > ul > li {
     flex: 6;
     overflow: hidden;
 }
+
+.slide-panel {
+    width: 300%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    justify-content: space-between;
+    transition: .6s;
+    left: 000%;
+}
+
+.slide-panel .img {
+    width: calc(100% / 3);
+    height: 100%;
+    background-size: 100% 100%;
+}
+
+.slide-panel .img:nth-child(1) { background-image: url(/images/slide2.jpg); }
+.slide-panel .img:nth-child(2) { background-image: url(/images/slide1.jpg); }
+.slide-panel .img:nth-child(3) { background-image: url(/images/slide3.jpg); }
+
 
 .slide-info {
     flex: 4;
@@ -189,3 +211,45 @@ nav > ul > li {
     color: #343434;
 }
 
+
+ /* Online housewarming Start */
+#house {
+    margin-top: 100px;
+}
+
+#house > h1 {
+    text-align: center;
+    font-size: 25px;
+    font-style: italic;
+    margin-bottom: 100px;
+}
+
+.house-panel {
+    width: 100%;
+    height: 700px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.house-img {
+    width: 200%;
+    height: 400px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.house-img > img {
+    width: calc(100% / 2);
+    height: 400px;
+}
+
+.house-box {
+    width: 300px;
+    height: 100%;
+    overflow: hidden;
+}
+
+
+ /* Online housewarming End */
